@@ -2,6 +2,7 @@
 import sys
 import argparse
 import shutil
+from Tree import Tree
 
 
 def encode(input_file, output_file):
