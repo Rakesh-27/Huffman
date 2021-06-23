@@ -2,7 +2,7 @@ import sys
 import argparse
 import shutil
 
-with open("test.txt", 'r+') as textfile:
+with open("story.txt", 'r+') as textfile:
     text = textfile.read()
     my_string = text.rstrip()
 
@@ -108,7 +108,7 @@ print ("This is a saving of ",uncompressed_file_size-compressed_file_size)
 
 
 #show the data compressed to a string of binary digits 
-with open("binary.huff", 'w+') as outfile:
+with open("story.huff", 'w+') as outfile:
     outfile.write(binary)
 ###UNCOMPRESS, using the letter_binay array (basically a dictionary of the letters and codes) ###
 
@@ -128,5 +128,5 @@ for digit in bitstring:
         pos +=1
 
 ##outputs the data it has uncompressed. 
-with open("out.txt", 'w+') as outfile:
-    outfile.write(uncompressed_string
+with open("story_.txt", 'w+') as outfile:
+    outfile.write(uncompressed_string)
