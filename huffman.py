@@ -1,3 +1,7 @@
+import sys
+import argparse
+import shutil
+
 with open("test.txt", 'r+') as textfile:
     text = textfile.read()
     my_string = text.rstrip()
